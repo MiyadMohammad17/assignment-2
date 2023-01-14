@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", sans-serif;
+}
+body {
+  margin: 50px 240px;
+}
+/*----- header starts----- */
+
+/* Nav start */
+header {
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.logo {
+  font-weight: 700;
+  font-size: 45px;
+}
+.nav-menu {
+  display: flex;
+  column-gap: 27px;
+  list-style: none;
+  font-weight: 500;
+  font-size: 18px;
+  color: #424242;
+  transition: .3s;
+  cursor: pointer;
+}
+.nav-opt{
+    transition: .3s;
+  cursor: pointer;
+}
+.nav-opt:hover{
+    border-bottom: 1px solid rgb(38, 31, 31);
+}
+/* nav end  */
+
+/* banner info and image start  */
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-title {
+  font-weight: 700;
+  font-size: 65px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header-desc {
+  text-align: center;
+  width: 60%;
+  font-weight: 400;
+  font-size: 16px;
+  color: #424242;
+  margin-bottom: 30px;
+}
+
+.pri-button{
+    padding: 20px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #FFFF ;
+    background-color: #ff900e;
+    border: 0;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.pri-button:hover{
+    position: relative;
+    background-color:#FFFF ;
+    color: #ff900e;
+    border: 1px solid #ff900e;
+}
+.header-img{
+    margin-top: 50px;
+    width: 100%;
+}
