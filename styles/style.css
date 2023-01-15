@@ -79,10 +79,14 @@ header {
 .explore-btn {
   text-align: center;
 }
-.header-img {
+.banner-img img{
+  width: 100%;
+  margin: auto;
+}
+/* .header-img {
   width: 100%;
   height: 700px;
-}
+} */
 /* header End  */
 
 /* main start */
@@ -127,12 +131,13 @@ header {
 /* feature styles end  */
 
 .love-enjoy {
-  width: 1440px;
+  width:75em;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 100px;
+  margin-top: 100px;
   margin-bottom: 100px;
 }
 /* .info {
@@ -164,6 +169,11 @@ header {
   margin-top: 80px;
   object-fit: cover;
 }
+.sundory-meye img{
+  width: 100%;
+  margin: auto;
+
+}
 .ovrlap-btn {
   font-size: 65px;
   font-weight: 700;
@@ -194,10 +204,10 @@ header {
 }
 .icons {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
+
 .i-cap {
   font-weight: 500;
   font-size: 40px;
@@ -212,12 +222,18 @@ header {
   box-sizing: border-box;
   border-radius: 8px;
   padding: 30px 20px;
-  transition: 0.8s;
-  transition-delay: 0.5;
+  transition: 0.4s;
   cursor: pointer;
+  text-align: center;
 }
 .icon:hover {
   background-color: #ff900e;
+}
+.icon:hover .i-cap{
+  color:#fff;
+}
+.icon:hover .i-desc{
+  color:#fff;
 }
 /* Facts style end */
 /*  Architects styles start */
@@ -318,14 +334,13 @@ footer h3 {
 
 /* media quary */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .our-features {
     display: grid;
     grid-template-columns: 1fr;
   }
   .img-container {
     grid-template-columns: 1fr;
-    margin: 0 20px;
     justify-content: center;
     align-items: center;
   }
@@ -353,7 +368,7 @@ footer h3 {
   }
   .ovrlap-btn {
     margin-top: 30px;
-    font-size: 30px;
+    font-size: 40px;
   }
   .button-2 {
     margin-left: 150px;
@@ -362,6 +377,85 @@ footer h3 {
     width: 90vw;
   }
   .facts {
-    margin-left: 20px;
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
   }
+  .icons{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+}
+.facts-desc{
+  width: 50%;
+}
+
+.logo{
+  font-size: 25px;
+}
+.nav-bar{
+  flex-direction: column;
+  row-gap: 20px;
+}
+header{
+  padding: 0px 30px
+}
+.header-img{
+  object-fit: cover;
+}
+.nav-menu{
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+.banner-img img{
+  width: 100%;
+  margin: auto;
+}
+.love-enjoy{
+  width: 300px ;
+  margin: auto;
+}
+.our-features {
+ width: 250px;
+ margin: auto;
+}
+.sundory-meye img{
+  width: 100%; 
+}
+.profile {
+  width: 300px;
+  margin: auto;
+  flex-direction: column;
+}
+.card-cont {
+  width: 300px;
+  flex-direction: column;
+  margin: auto;
+  row-gap: 20px;
+}
+.card img{
+  width: 100%;
+}
+.spon-info {
+  width: 300px;
+
+}
+.sp-img-cont {
+  width: 300px;
+  margin: auto;
+  flex-direction: column;
+  row-gap: 30px;
+}
+footer {
+  margin: auto;
+  width: 300px;
+  text-align: center;
+  background-color: #fff4e7;
+
+}
+footer h3{
+  padding: 20px 0px;
+}
 }
