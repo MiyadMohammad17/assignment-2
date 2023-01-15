@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Work Sans", sans-serif;
 }
 
@@ -10,7 +11,6 @@
 header {
   width: 100%;
   background-color: #fff4e7;
-  margin-bottom: 100px;
 }
 .nav-bar {
   display: flex;
@@ -75,14 +75,9 @@ header {
   background-color: #ff900e;
   border: 0;
   cursor: pointer;
-}
-/* .pri-button:hover {
-  position: relative;
-  background-color: #ffff;
-  color: #ff900e;
-  border: 1px solid #ff900e; */
-.header-img {
-  margin-top: 50px;
+  margin-bottom: 30px;
+} 
+.header-img{
   width: 1440px;
   height: 700px;
 }
@@ -96,6 +91,7 @@ header {
   width: 1440px;
   margin: 0 auto;
   align-items: center;
+  margin-top: 100px;
 }
 .img-container {
   display: grid;
@@ -121,10 +117,10 @@ header {
   margin-bottom: 30px;
 }
 .fe-btn {
-  width: 120px;
+  width: 180px;
   text-align: center;
 }
-/* feature end  */
+/* feature styles end  */
 
 .love-enjoy {
   width: 1440px;
@@ -149,6 +145,12 @@ header {
   font-size: 16px;
   font-weight: 500;
   color: #727272;
+}
+.boxs{
+  margin: 20px 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
 }
 .boxs p {
   color: #727272;
@@ -216,6 +218,55 @@ header {
   background-color: #ff900e;
 }
 /* Facts style end */
+/*  Architects styles start */
+.profile{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 30px;
+  width: 1440px;
+  margin: 100px auto;
+}
+.pro-info{
+  width: 70%;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.pro-title{
+  font-size: 45px;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+.pro-desc{
+  font-size: 20px;
+  font-weight: 400;
+  color: #727272;
+}
+.card-cont{
+  width: 1440px;
+  display: flex;
+  justify-content: space-around;
+  column-gap: 20px;
+
+}
+.card{
+  background-color: #f8f3ec;
+  padding: 60px 20px;
+  box-shadow: 0px 4px 30px #acaaaa;
+  border-radius: 8px;
+}
+.card img{
+  height: 200px;
+
+}
+.card p{
+  color: #727272;
+  font-weight: 400;
+  margin-top: 10px;
+}
+/* architects styles end */
+
 
 /* sponsors style start */
 
